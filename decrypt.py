@@ -1,5 +1,6 @@
 def decrypt(ciphertext, keyword):
-    # Remove duplicate characters from the keyword and convert it to uppercase
+    # Remove duplicate characters and spaces from the keyword and convert it to uppercase
+    keyword = "".join(char for char in keyword.upper() if char != " ")
     keyword = "".join(dict.fromkeys(keyword.upper()))
 
     # Create a string of remaining letters not in the keyword
