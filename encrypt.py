@@ -1,5 +1,6 @@
 def encrypt(plaintext, keyword):
     # Remove duplicate characters from the keyword and convert to uppercase
+    keyword = "".join(char for char in keyword.upper() if char != " ")
     keyword = "".join(dict.fromkeys(keyword.upper()))
 
     # Create a string of remaining letters (not in the keyword)
