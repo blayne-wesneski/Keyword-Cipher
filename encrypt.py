@@ -28,4 +28,5 @@ def encrypt(plaintext, keyword):
             ciphertext += char
 
     # Print the encrypted text
+    print("The key is: " + key)
     print("The encrypted text is: " + ciphertext)

@@ -26,4 +26,5 @@ def decrypt(ciphertext, keyword):
             plaintext += char
 
     # Print the decrypted plaintext
+    print("The key is: " + key)
     print("The decrypted text is: " + plaintext)
